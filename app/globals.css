@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+:root {
+  --brand: #174a9c;
+  --brand-2: #159a9c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #f4f7fb;
+  color: #0f172a;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+::selection {
+  background: #174a9c;
+  color: white;
+}
+
+.resume-paper {
+  width: 794px;
+  min-height: 1123px;
+}
+
+@media (max-width: 900px) {
+  .resume-paper {
+    width: min(794px, calc(100vw - 32px));
+    min-height: auto;
+  }
+}
